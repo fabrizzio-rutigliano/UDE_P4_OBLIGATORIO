@@ -53,3 +53,21 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# Code::Blocks generated files and local workspace state
+*.depend
+*.layout
+*.workspace
+
+# Common build output directories (Code::Blocks and other toolchains)
+/bin/
+/obj/
+/Debug/
+/Release/
+
+# macOS metadata
+.DS_Store
+._*
+
+#folders
+/Documentacion
