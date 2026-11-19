@@ -5,10 +5,10 @@ using namespace std;
 String::String()
 {
     cadena = new char[1];
-    cadena[0] = "\0";
+    cadena[0] = '\0';
 }
 
-String::String(char *s) 
+String::String(const char* s) 
 {
     int largo = strlen(s);
     cadena = new char[largo + 1];
@@ -67,13 +67,13 @@ void String :: scan ()
     char aux[MAX];
     char c = cin.get();
     int i=0;
-    while (c != "\n" && i < MAX-1)
+    while (c != '\n' && i < MAX-1)
     {
         aux[i] = c;
         i++;
         c = cin.get();
     }
-    aux[i] = "\0";
+    aux[i] = '\0';
     cadena = new char[i+1];
     strcpy (cadena, aux);
 }

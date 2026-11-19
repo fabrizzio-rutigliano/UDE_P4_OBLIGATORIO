@@ -11,7 +11,7 @@ class String
     public:
         String(); // constructor por defecto.
     
-        String (char* s); // constructor común
+        String (const char* s); // constructor común
         
         String (const String &); // constructor de copia
 
