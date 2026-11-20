@@ -6,7 +6,7 @@ Autor :: Autor()
 
 }
 
-Autor :: Autor(int, String, String)
+Autor :: Autor(int ci, String nom, String ape)
 {
 
 }

@@ -71,3 +71,5 @@ dkms.conf
 
 #folders
 /Documentacion
+
+.vscode

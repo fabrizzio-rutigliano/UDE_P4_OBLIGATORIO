@@ -1,3 +1,4 @@
+//GP
 #ifndef _Autor_H
 #define _Autor_H
 
