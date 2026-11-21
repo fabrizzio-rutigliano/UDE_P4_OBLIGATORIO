@@ -1,12 +1,13 @@
 #include "Iterador.h"
 
-Iterador::Iterador()
+Iterador :: Iterador()
 {
-    tope = 0;
-    actual = 0;
-};
+    prim = NULL;
+    ult = NULL;
+    actual = NULL;
+}
 
-Interador::~Iterador()
+Iterador :: ~Iterador()
 {
     Nodo * aux = prim;
     while(aux != NULL)
@@ -17,7 +18,7 @@ Interador::~Iterador()
     }
 }
 
-void Iterador::insertar(Objeto * o)
+void Iterador :: insertar(Objeto * o)
 {
     Nodo * nuevo = new Nodo;
     nuevo->info = o;
@@ -33,17 +34,17 @@ void Iterador::insertar(Objeto * o)
         ult->sig = nuevo;
         ult = ult->sig;
     }
-};
+}
 
-bool Iterador::hayMasObjetos()
+bool Iterador :: hayMasObjetos()
 {
     return (bool) (actual!=NULL);
-};
+}
 
-Objeto Iterador::proximoObjeto()
+Objeto * Iterador :: proximoObjeto()
 {
-    Objeto o = actual->info;
+    Objeto * o = actual->info;
     actual = actual->sig;
     return o;
-};
+}
 

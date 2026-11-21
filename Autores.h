@@ -8,13 +8,19 @@
 
 class Autores{
     private:
-        typedef struct Nodo{
+        struct Nodo{
             Autor * info;
             Nodo * hizq;
             Nodo * hder;
         };
 
         typedef Nodo * ABB;
+
+        ABB arbol;
+
+        void destruirArbol(ABB &); //auxiliar para desrtuctor recursivo
+
+        void cargarAutoresIterador(ABB, Iterador &); //auxiliar para listarAutoresOrden recursiva.
 
     public:
         Autores(); //Constructor por defecto

@@ -2,16 +2,15 @@
 #ifndef _Autor_H
 #define _Autor_H
 
-#include "String.h"
+#include "Objeto.h"
 
-class Autor{
+class Autor : public Objeto{
     private:
         int cedula;
         String nombre;
         String apellido;
     
     public:
-        Autor(); //constructor por defecto
 
         Autor(int, String, String); //constructor comun
 

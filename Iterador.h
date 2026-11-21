@@ -6,7 +6,7 @@
 
 class Iterador{
     private:
-        typedef struct Nodo
+        struct Nodo
         {
             Objeto * info;
             Nodo * sig;

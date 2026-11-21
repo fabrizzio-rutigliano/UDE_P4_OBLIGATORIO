@@ -2,6 +2,8 @@
 #include <iostream>
 #include <string.h>
 using namespace std;
+
+
 String::String()
 {
     cadena = new char[1];
