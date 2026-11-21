@@ -4,7 +4,7 @@
 
 #include "Objeto.h"
 
-class Libro{
+class Libro : public Objeto{
     private:
         String isbn;
         String titulo;
@@ -17,7 +17,7 @@ class Libro{
         virtual ~Libro();
         String getIsbn();
         String getTitulo();
-        String Editorial();
+        String getEditorial();
         float getPrecioBase();
         int getUnidadesVendidas();
         void setPrecioBase(float);
