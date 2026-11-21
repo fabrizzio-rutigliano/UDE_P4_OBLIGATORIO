@@ -17,8 +17,8 @@ class Texto : public Libro{
         Fecha getFechaPublicado(); //selector de fecha de publicacion
 
         float precioVenta(); //devuelve el precio de venta del libro de texto
-        String TipoLibro(); //devuelve el tipo libro
-}
+        String tipoLibro(); //devuelve el tipo libro
+};
 
 
 
