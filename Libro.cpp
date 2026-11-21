@@ -1,57 +1,38 @@
 #include "Libro.h"
 
-
-Libro :: Libro(String is, String tit, String edi, float prec, int vend)
-{
-
+Libro :: Libro(String is, String tit, String edi, float prec): isbn(is), titulo(tit), editorial(edi){
+    precioBase = prec;
+    unidadesVendidas = 0;
 }
 
-Libro :: ~Libro()
-{
+Libro :: ~Libro(){}
 
+String Libro :: getIsbn(){
+    return isbn;
 }
 
-String Libro :: getIsbn()
-{
-
+String Libro :: getTitulo(){
+    return titulo;
 }
 
-String Libro :: getTitulo()
-{
-
+String Libro :: getEditorial(){
+    return editorial;
 }
 
-String Libro :: Editorial()
-{
-
+float Libro :: getPrecioBase(){
+    return precioBase;
 }
 
-float Libro :: getPrecioBase()
-{
-
+int Libro :: getUnidadesVendidas(){
+    return unidadesVendidas;
 }
         
-int Libro :: getUnidadesVendidas()
-{
-
-}
-        
-void Libro :: setPrecioBase(float)
-{
-
+void Libro :: setPrecioBase(float prec){
+    precioBase = prec;
 }
 
-void Libro :: incrementarVenta()
-{
-
+void Libro :: incrementarVenta(){
+    unidadesVendidas ++;
 }
-        
-float Libro :: precioVenta()
-{
 
-}
-        
-String Libro :: tipoLibro()
-{
-
-}
+// Los metodos virtuales puros precioVenta y tipoLibro se implementan en las clases derivadas
