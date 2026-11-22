@@ -4,7 +4,7 @@
 
 #include "Objeto.h"
 
-class Libro{
+class Libro : public Objeto{
     private:
         String isbn;
         String titulo;
@@ -13,17 +13,21 @@ class Libro{
         int unidadesVendidas;
 
     public:
-        Libro(String, String, String, float, int);
+        Libro(String, String, String, float);
         virtual ~Libro();
+
         String getIsbn();
         String getTitulo();
-        String Editorial();
+        String getEditorial();
         float getPrecioBase();
         int getUnidadesVendidas();
+        
         void setPrecioBase(float);
         void incrementarVenta();
-        virtual float precioVenta();
-        virtual String tipoLibro();
+        
+        //Son metodos virtuales puros, ejemplo en Practico 6, ejercicio 1
+        virtual float precioVenta() = 0;
+        virtual String tipoLibro() = 0;
 
 };
 

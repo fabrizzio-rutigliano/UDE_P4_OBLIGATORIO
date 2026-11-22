@@ -29,6 +29,11 @@ class String
 
         void print(); // muestra un string en la salida estándar
 
+        // AUXILIARES PARA METODOS ESPECIFICOS DEL PROBLEMA -> manejo de libros
+        int largo(); // Devuelve la cantidad de caracteres del String
+
+        char caracter(int); // Devuelve el caracter de la posicion indicada
+
 };
 
 #endif

@@ -84,3 +84,15 @@ void String :: print()
 {
     cout << cadena;
 }
+
+// AUXILIARES PARA METODOS ESPECIFICOS DEL PROBLEMA -> manejo de libros
+
+int String :: largo()
+{
+    return strlen(cadena);
+}
+
+char String :: caracter(int posicion)
+{
+    return cadena[posicion];
+}
