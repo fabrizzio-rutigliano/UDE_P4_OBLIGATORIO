@@ -69,13 +69,17 @@ void String :: scan ()
     char aux[MAX];
     char c = cin.get();
     int i=0;
-    while (c != '\n' && i < MAX-1)
+    while (c != '\n' && !cin.eof() && i < MAX-1)
     {
         aux[i] = c;
         i++;
         c = cin.get();
     }
     aux[i] = '\0';
+    // si la linea era mas larga que MAX, se descarta el resto para que no lo lea la proxima entrada
+    while (c != '\n' && !cin.eof())
+        c = cin.get();
+    delete [] cadena; // se libera la cadena anterior para no perder memoria
     cadena = new char[i+1];
     strcpy (cadena, aux);
 }
