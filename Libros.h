@@ -45,7 +45,7 @@ class Libros{
 
         void listarPorPrefijoTitulo(String, Iterador &); //lista libros con titulos que comiencen con el string
 
-        void recaudacionEditorial(String, float &, int &); //recibe una editorial y devuelve la cantidad facturada y cantidad de copias vendidas
+        void recaudacionEditorial(String, float &, int &); //recibe una editorial y devuelve la cantidad facturada y cantidad de libros de la editorial
 
         void unidadesVendidasSuperanPrecio(float, int &, int &, int &); //recibe un precio y devuelve cuantas unidades vendidas de novelas, textos y escolares superan ese precio base
 
