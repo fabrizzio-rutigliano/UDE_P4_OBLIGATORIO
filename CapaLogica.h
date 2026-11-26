@@ -4,9 +4,7 @@
 #include "Autores.h"
 #include "Libros.h"
 #include "Novela.h"
-#include "Texto.h"
 #include "Escolar.h"
-#include "Iterador.h"
 #include "TipoError.h"
 
 // Fachada de acceso a la capa logica. Es el unico punto de entrada que usa el main.

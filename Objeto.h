@@ -8,7 +8,7 @@ class Objeto{
 
     public:
         Objeto();
-        virtual ~Objeto();
+        virtual ~Objeto() = 0;
 
 };
 
